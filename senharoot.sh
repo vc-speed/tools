@@ -37,8 +37,7 @@ echo -e "\n\033[1;31mCalma barboleta, vê se não erra de novo\033[0m"
 exit 0
 }
 echo "root:$senha" | chpasswd
-echo -e "\n 
-                                                     
+echo -e "\n                                                      
                                         d8P          
                                      d888888P        
 ?88,.d88b,  88bd88b d8888b   88bd88b   ?88'   d8888b 
