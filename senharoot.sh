@@ -1,10 +1,8 @@
 #!/bin/bash
-# Noob sofre
-# nego não sabe entrar como Usuário root
 clear
 [[ "$(whoami)" != "root" ]] && {
 	clear
-	echo -e "\033[1;31me lá vamos nós, usuário root, \033[1;32m(\033[1;33msudo -i\033[1;32m)\033[0m"
+	echo -e "\033[1;31mLá vamos nós, antes de usar a ferramenta use o código: \033[1;32m\033[1;33msudo -i\033[1;32m\033[0m"
 	exit
 }
 [[ $(grep -c "prohibit-password" /etc/ssh/sshd_config) != '0' ]] && {
