@@ -1,0 +1,2 @@
+# BASE
+bash <(wget -qO- )
