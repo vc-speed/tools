@@ -37,7 +37,7 @@ echo -e "\n\033[1;31mCalma barboleta, vê se não erra de novo\033[0m"
 exit 0
 }
 echo "root:$senha" | chpasswd
-echo -e "\n                                                      
+echo -e "\n\033[1;31m[ \033[1;33mVai brasiliam \033[1;31m]\033[1;37m - \033[1;32magora o bicho vai pegar \033                                                      
                                         d8P          
                                      d888888P        
 ?88,.d88b,  88bd88b d8888b   88bd88b   ?88'   d8888b 
@@ -46,4 +46,4 @@ echo -e "\n
   888888P'd88'     `?8888P'd88'   88b  `?8b  `?8888P'
   88P'                                               
  d88                                                 
- ?8P                                                 - \033[1;32magora o bicho vai pegar \033[0m"
+ ?8P
