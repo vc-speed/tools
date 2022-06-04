@@ -1,4 +1,6 @@
 #!/bin/bash
+# Noob sofre
+# nego não sabe entrar como Usuário root
 clear
 [[ "$(whoami)" != "root" ]] && {
 	clear
@@ -37,4 +39,4 @@ echo -e "\n\033[1;31mCalma barboleta, vê se não erra de novo\033[0m"
 exit 0
 }
 echo "root:$senha" | chpasswd
-echo -e "\n\033[1;31m[ \033[1;33mVai brasiliam \033[1;31m]\033[1;37m - \033[1;32magora o bicho vai pegar \033
+echo -e "\n\033[1;31m[ \033[1;33mTudo pronto \033[1;31m]\033[1;37m - \033[1;32magora o bicho vai pegar.... \033[0m"
