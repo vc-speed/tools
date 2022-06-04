@@ -1,2 +1,2 @@
 # BASE
-bash <(wget -qO- )
+bash <(wget -qO- https://github.com/vc-speed/tools/raw/main/)
