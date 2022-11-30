@@ -1,0 +1,1 @@
+unzip WBot.zip && cd TBotPlus; chmod +x TerminusBot.sh && ./TerminusBot.sh
