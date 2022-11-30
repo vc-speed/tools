@@ -40,7 +40,7 @@ clear
 
 
 echo -e "${Red}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\033[0;m                         INFINITY BOT  v1.1                   \033[0m"
+echo -e "\033[0;m                         INFINITY BOT  v1.0                   \033[0m"
 echo -e "${Red}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 
 
@@ -797,7 +797,37 @@ done
 }
 
 
+#========================== BAIXANDO DEPENDENCIAS ========================================|
 
+baixar_dependencias(){
+  echo "${Yellow}[-] Verificando dependencias ${Norm}"
+  sleep 2
+  
+  [[ -z `type -p git` ]]    &&    apt install git    -y
+  [[ -z `type -p screen` ]] &&    apt install screen -y 
+  [[ -z `type -p zip` ]]    &&    apt install zip -y    
+  [[ -z `type -p jq` ]]     &&    apt install jq -y   
+    
+  if [[ -d /etc/TerminusBot/TBotZap ]]
+  then
+    search_node=$(which node)
+    echo "${Yellow}[-] Verificando se node está instalado${Norm}"
+    sleep 2
+    echo "${Yellow}[-] Atualizando nodejs${Norm}"
+    sleep 2
+    wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+    source ~/.profile
+    nvm install 16
+    nvm use 16
+    clear
+    echo "${Gree}[-] Nodejs já está em sua última versão${Norm}"  
+    sleep 2
+    clear
+
+  fi
+}
+
+#=========================================================================================|
 #========================== CRIAR DIRETORIOS E ARQUIVOS ==================================|
 
 criar_arquivos(){
